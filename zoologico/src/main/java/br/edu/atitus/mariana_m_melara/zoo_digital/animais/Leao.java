@@ -1,0 +1,29 @@
+package br.edu.atitus.mariana_m_melara.zoo_digital.animais;
+
+import br.edu.atitus.mariana_m_melara.zoo_digital.comportamentos.*;
+
+public class Leao extends Mamifero implements Corredor, Predador {
+    public Leao(String nome, int idade, boolean temPelo) {
+        super(nome, idade, temPelo);
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println(this.getNome() + " está rugindo.");
+    }
+
+    @Override
+    public void comer() {
+        System.out.println(this.getNome() + " está comendo carne.");
+    }
+
+    @Override
+    public void correr() {
+        System.out.println(this.getNome() + " está correndo pela savana.");
+    }
+
+    @Override
+    public void cacar() {
+        System.out.println(this.getNome() + " está caçando zebras.");
+    }
+}
